@@ -1,2 +1,2 @@
 # mergesortjs
-Javascript Implementation of the Merge Sort Algorithm.
+Javascript Implementation of the Merge Sort Algorithm (recursive).
