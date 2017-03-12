@@ -51,14 +51,12 @@ function merge(left, right) {
   }
 
   if(x != left.length) {
-    //console.log('x did not reach');
     for(let idx = x; idx < left.length; idx++) {
       final.push(left[idx]);
     }
   }
 
   if(y != right.length) {
-    //console.log('y did not reach');
     for(let idx = y; idx < right.length; idx++) {
       final.push(right[idx]);
     }
