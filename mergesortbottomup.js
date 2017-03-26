@@ -1,14 +1,14 @@
 function mergeSort(arrayToBeSorted) {
   let multiplier = 2;
   const temp = [];
-
    for(let sz = 1; sz < arrayToBeSorted.length; sz *= multiplier ) {
-     for(let low = 0; low < arrayToBeSorted.length - sz; low += sz*2) {
+
+     for(let low = 0; low <= arrayToBeSorted.length - sz; low += sz*2) {
+       console.log('low--------->', low)
        let mid = low + sz - 1;
        let high = Math.min(low + (sz*2)-1, arrayToBeSorted.length);
-      //  console.log('low--------->',low)
-      //  console.log('mid-------->', mid);
-      //  console.log('high-------->', high);
+       //console.log('mid-------->', mid);
+       //console.log('high-------->', high);
       arrayToBeSorted = merge(arrayToBeSorted, temp, low, mid, high);
       arrayToBeSorted = merge(arrayToBeSorted, temp, 8, 9, 11);
        //console.log('sorted steps----->', arrayToBeSorted);
