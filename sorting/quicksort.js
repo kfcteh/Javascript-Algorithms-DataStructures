@@ -1,4 +1,4 @@
-let arrayToSort = [10,9,7,5,8,3,4,4,4,1,2,3];
+let arrayToSort = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 function swap(indexOne, indexTwo, array) {
   const temp = array[indexOne];
@@ -25,7 +25,6 @@ function quickSort(start, end, array) {
   // console.log(array.filter((item, index) => {
   //   return index >= start && index <= end;   
   // }));
-
   if(start >= end) {
     return;
   }
